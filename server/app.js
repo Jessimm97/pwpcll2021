@@ -46,11 +46,13 @@ if (env === 'development') {
       publicPath: webpackDevConfig.output.publicPath,
     })
   );
+  
   // Paso 5. Agregando el Webpack Hot middleware
   app.use(webpackHotMiddleware(compiler));
 } else {
   console.log('> Excecuting in Production Mode...');
 }
+
 // view engine setup
 configTemplateEngine(app);
 

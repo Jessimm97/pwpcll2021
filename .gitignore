@@ -1,7 +1,10 @@
 # Ignorando las dependencias
 node_modules
 dist-server
+<<<<<<< HEAD
 
+=======
+>>>>>>> 15eec9e0325bcb2bb2ab62ae5ed81584ab920252
 #Ignorando los archivos de logs
 logs 
 *.logs

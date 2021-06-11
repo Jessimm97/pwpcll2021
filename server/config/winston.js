@@ -4,11 +4,6 @@ import appRoot from 'app-root-path';
 
 // Componentes para crear el formato personalizado
 const { combine, timestamp, printf, uncolorize, json, colorize } = format;
-//
-<<<<<<< HEAD
-
-=======
->>>>>>> 15eec9e0325bcb2bb2ab62ae5ed81584ab920252
 // Creando el Perfil de color para el log
 const colors = {
   error: 'red',

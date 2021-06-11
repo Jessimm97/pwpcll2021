@@ -1,15 +1,15 @@
-var express = require('express');
-var router = express.Router();
+// Importando el router de Home
+import homeRouter from './home';
+// Importando router de users
+import userRouter from './user';
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express', author:'Jessica Mondragón',appName:'WebApp', company: 'Awsome Software'});
-});
+// Agregando las rutas a la aplicación
+const addRoutes = (app) => {
+  app.use('/', homeRouter);
+  app.use('/user', userRouter);
+  return app;
+};
 
-/*Agregando una nueva ruta */
-router.get('/greeting', function(req, res, next){
-  res.send("Hola Bienvenido");
-});
-
-
-module.exports = router;
+export default {
+  addRoutes,
+};

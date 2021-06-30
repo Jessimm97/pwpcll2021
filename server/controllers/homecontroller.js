@@ -1,5 +1,5 @@
 const index = (req, res) => {
-  res.render('index', {
+  res.render('home/index', {
     title: 'Express',
   });
 };
@@ -10,8 +10,12 @@ const greeting = (req, res) => {
     message: 'Hola Campeon de la Fullstack Web',
   });
 };
+const about = (req, res) => {
+  res.render('home/about', { title: 'Acerca de projnotes' });
+};
 
 export default {
   index,
   greeting,
+  about,
 };
